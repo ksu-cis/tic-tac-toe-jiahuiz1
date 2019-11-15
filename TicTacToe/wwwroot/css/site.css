@@ -44,3 +44,8 @@ body {
     font-size: 90px;
     text-align: center
 }
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+}

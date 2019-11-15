@@ -10,16 +10,48 @@ namespace TicTacToe.Pages
 {
     public class MenuModel : PageModel
     {
-        public Menu menu { get; }
+        Menu menu = new Menu();
 
-        public double Price
+        public Menu Menu
         {
             get
             {
-                return menu.Price
+                return this.menu;
             }
         }
 
+        public List<CretaceousCombo> combos
+        {
+            get
+            {
+                return Menu.AvailableCombos;
+            }
+        }
+
+        public List<Entree> entrees
+        {
+            get
+            {
+                return Menu.AvailableEntrees;
+            }
+        }
+
+        public List<Side> sides
+        {
+            get
+            {
+                return Menu.AvailableSides;
+            }
+        }
+
+        public List<Drink> drinks
+        {
+            get
+            {
+                return Menu.AvailableDrinks;
+            }
+        }
+      
         public void OnGet()
         {
 
